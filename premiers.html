@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фильмы по годам — Киномир</title>
+    <meta name="description" content="Фильмы по годам: выбирайте год и смотрите все фильмы, вышедшие в этот период.">
+    <meta name="keywords" content="фильмы по годам, подборки, кино по годам">
+    <meta property="og:title" content="Фильмы по годам — Киномир">
+    <meta property="og:description" content="Изучайте фильмы по годам выпуска.">
+    <meta property="og:image" content="assets/images/og-image.jpg">
+    <meta property="og:type" content="website">
+
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2DD4BF">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/premiers.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a class="header__logo" href="index.html">
+                <img src="assets/icons/logo.svg" alt="Киномир">
+            </a>
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li><a class="header__item-link" href="top250.html">Топ 250</a></li>
+                    <li><a class="header__item-link" href="premiers.html">Фильмы по годам</a></li>
+                    <li><a class="header__item-link js-scroll" href="index.html#about">О нас</a></li>
+                </ul>
+            </nav>
+            <div class="header__actions">
+                <button class="header__theme-button" aria-label="Тёмная тема">
+                    <img src="assets/images/tema.png" alt="Тема">
+                </button>
+                <button class="header__burger" aria-label="Меню">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+            <nav class="header__mobile-menu">
+    <ul class="header__mobile-list">
+        <li><a href="top250.html">Топ 250</a></li>
+        <li><a href="premiers.html">Фильмы по годам</a></li>
+        <li><a href="index.html#about">О платформе</a></li>
+        <li><a href="index.html#subscribe">Подписка</a></li>
+    </ul>
+</nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="premiers section">
+            <div class="container">
+                <h1 class="premiers__title title">Фильмы по годам</h1>
+                <p class="premiers__subtitle">Выберите год, чтобы посмотреть все фильмы, вышедшие в этот период</p>
+
+                <!-- Блок с вкладками годов -->
+                <div class="premiers__year-tabs"></div>
+
+
+                <!-- Контейнер для карточек фильмов -->
+                <div class="premiers__list movies__list"></div>
+
+                <!-- Кнопка "Загрузить ещё" -->
+                <div class="premiers__loadmore movies__loadmore">
+                    <button class="premiers__loadmore-button movies__loadmore-button" type="button">Загрузить ещё</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__col">
+                <a class="footer__logo" href="index.html"><img src="assets/icons/logo.svg" alt="Киномир"></a>
+                <p>© 2026 Киномир<br>Все права защищены.</p>
+            </div>
+            <div class="footer__col">
+                <h4>Навигация</h4>
+                <ul>
+                    <li><a href="top250.html">Топ 250</a></li>
+                    <li><a href="premiers.html">Фильмы по годам</a></li>
+                    <li><a href="index.html#about">О нас</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>Контакты</h4>
+                <a href="mailto:info@kinomir.ru">info@kinomir.ru</a>
+                <a href="tel:+79991234567">+7 (999) 123-45-67</a>
+                <div class="footer__socials">
+                    <a href="#"><img src="assets/images/tg.jpg" alt="Telegram"></a>
+                    <a href="#"><img src="assets/icons/VK.com-logo.svg" alt="VK"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/premiers.js"></script>
+</body>
+</html>

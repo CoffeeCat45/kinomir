@@ -1,0 +1,35 @@
+{
+   "name": "Киномир – фильмы онлайн",
+  "short_name": "Киномир",
+  "description": "Платформа для поиска популярных фильмов, рейтингов и рекомендаций.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#0A0E1A",
+  "theme_color": "#2DD4BF",
+  "icons": [
+    {
+      "src": "assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "assets/image/screenshots-wide.jpg",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "assets/image/screenshots-mobile.jpg",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ]
+}

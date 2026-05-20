@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Фильм — Киномир</title>
+    <meta
+      name="description"
+      content="Информация о фильме: описание, рейтинг, актёрский состав, похожие фильмы."
+    />
+    <meta
+      name="keywords"
+      content="фильм, кино, описание фильма, актёры, рейтинг"
+    />
+    <meta property="og:title" content="Фильм — Киномир" />
+    <meta
+      property="og:description"
+      content="Смотрите информацию о фильме, актёрах и похожих картинах."
+    />
+    <meta property="og:image" content="assets/images/og-image.jpg" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://yourusername.github.io/kinosite/movies.html"
+    />
+
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#ffb300" />
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/movies.css" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="container header__container">
+        <a class="header__logo" href="index.html">
+          <img src="assets/icons/logo.svg" alt="Логотип сайта Киномир" />
+        </a>
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li><a class="header__item-link" href="top250.html">Топ 250</a></li>
+            <li>
+              <a class="header__item-link" href="premiers.html"
+                >Фильмы по годам</a
+              >
+            </li>
+            <li>
+              <a class="header__item-link js-scroll" href="index.html#about"
+                >О платформе</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="header__actions">
+          <button
+            class="header__theme-button"
+            type="button"
+            aria-label="Переключить тему"
+          >
+            <img src="assets/images/tema.png" alt="Иконка темы" />
+          </button>
+          <button
+            class="header__burger"
+            type="button"
+            aria-label="Открыть меню"
+          >
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+          </button>
+        </div>
+        <nav class="header__mobile-menu">
+          <ul class="header__mobile-list">
+            <li><a href="top250.html">Топ 250</a></li>
+            <li><a href="premiers.html">Фильмы по годам</a></li>
+            <li><a href="index.html#about">О платформе</a></li>
+            <li><a href="index.html#subscribe">Подписка</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="movie-detail section">
+        <div class="container">
+          <h1 class="movie-detail__title"></h1>
+          <div class="movie-detail__content">
+            <img class="movie-detail__poster" src="#" alt="Постер фильма" />
+            <div class="movie-detail__info">
+              <p class="movie__desc"></p>
+              <p class="movie__genres"></p>
+              <div class="movie_facts">
+                <div class="movie__fact-item">
+                  <h3 class="movie_fact-title">Год выпуска</h3>
+                  <p class="movie_fact-text year"></p>
+                </div>
+                <div class="movie__fact-item">
+                  <h3 class="movie_fact-title">Возраст</h3>
+                  <p class="movie_fact-text age"></p>
+                </div>
+                <div class="movie__fact-item">
+                  <h3 class="movie_fact-title">Длительность</h3>
+                  <p class="movie_fact-text timing"></p>
+                </div>
+                <div class="movie__fact-item">
+                  <h3 class="movie_fact-title">Рейтинг</h3>
+                  <p class="movie_fact-text raiting"></p>
+                </div>
+              </div>
+              <div class="movie__rating"></div>
+              <div class="movie__actors">
+                <h3 class="movie__actors-title">Актёрский состав</h3>
+                <ul class="movie__actors-list"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="similar-movies section">
+        <div class="container">
+          <h2 class="similar-movies__title title">Фильмы с похожим годом</h2>
+          <div class="similar-movies__cards movies__list"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="container footer__top-container">
+          <div class="footer__left">
+            <a class="footer__logo" href="index.html"
+              ><img src="assets/icons/logo.svg" alt="Логотип"
+            /></a>
+          </div>
+          <div class="footer__center">
+            <nav class="footer__nav">
+              <ul class="footer__menu">
+                <li><a class="footer__link" href="top250.html">ТОП-250</a></li>
+                <li><a class="footer__link" href="#">Форум</a></li>
+                <li>
+                  <a class="footer__link js-scroll" href="index.html#about"
+                    >О платформе</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__right">
+            <a class="footer__contact" href="mailto:info@kinosite.ru"
+              >info@kinosite.ru</a
+            >
+            <a class="footer__contact" href="tel:+79991234567"
+              >+7 (999) 123-45-67</a
+            >
+            <div class="footer__socials">
+              <a class="footer__social-link" href="#"
+                ><img src="assets/images/tg.jpg" alt="Telegram"
+              /></a>
+              <a class="footer__social-link" href="#"
+                ><img src="assets/icons/VK.com-logo.svg" alt="VK"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container footer__bottom-container">
+          <a class="footer__policy-link" href="#"
+            >Политика конфиденциальности</a
+          >
+          <div class="footer__copy">© 2026 Киномир. Все права защищены.</div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/movie.js"></script>
+  </body>
+</html>

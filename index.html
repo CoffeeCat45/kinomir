@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Киномир – популярные фильмы</title>
+    <meta name="description" content="Киномир – современная платформа для поиска фильмов, рейтингов и рекомендаций.">
+    <meta name="keywords" content="кино, фильмы, популярные фильмы, рейтинг, Киномир">
+    <meta property="og:title" content="Киномир – фильмы онлайн">
+    <meta property="og:description" content="Открой для себя лучшие фильмы с высоким рейтингом.">
+    <meta property="og:image" content="assets/images/og-image.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourusername.github.io/Киномир/">
+
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2DD4BF">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a class="header__logo" href="index.html">
+                <img src="assets/icons/logo.svg" alt="Киномир">
+            </a>
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li><a class="header__item-link" href="top250.html">Топ 250</a></li>
+                    <li><a class="header__item-link" href="premiers.html">Фильмы по годам</a></li>
+                    <li><a class="header__item-link js-scroll" href="#about">О нас</a></li>
+                    <li><a class="header__item-link js-scroll" href="#subscribe">Подписка</a></li>
+                </ul>
+            </nav>
+            <div class="header__actions">
+                <button class="header__theme-button" aria-label="Тёмная тема">
+                    <img src="assets/images/tema.png" alt="Тема">
+                </button>
+                <button class="header__burger" aria-label="Меню">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+            <nav class="header__mobile-menu">
+    <ul class="header__mobile-list">
+        <li><a href="top250.html">Топ 250</a></li>
+        <li><a href="premiers.html">Фильмы по годам</a></li>
+        <li><a href="index.html#about">О платформе</a></li>
+        <li><a href="index.html#subscribe">Подписка</a></li>
+    </ul>
+</nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero с градиентом -->
+        <section class="hero">
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <h1 class="hero__title">Киномир</h1>
+                    <p class="hero__subtitle">Откройте для себя мир кино. Популярные фильмы, рейтинги, трейлеры и многое другое.</p>
+                    <a class="hero__cta js-scroll" href="#movies">Смотреть фильмы</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Блок популярных фильмов -->
+        <section class="movies section" id="movies">
+            <div class="container">
+                <h2 class="movies__title title">🔥 Сейчас в тренде</h2>
+                <div class="movies__list"></div>
+                <div class="movies__loadmore">
+                    <button class="movies__loadmore-button" type="button">Загрузить ещё</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- О платформе -->
+        <section class="about section" id="about">
+            <div class="container">
+                <h2 class="about__title title">О платформе</h2>
+                <div class="about__grid">
+                    <div class="about__card">
+                        <div class="about__icon">🎬</div>
+                        <h3>10 000+ фильмов</h3>
+                        <p>Огромная база фильмов, сериалов и аниме.</p>
+                    </div>
+                    <div class="about__card">
+                        <div class="about__icon">⭐</div>
+                        <h3>Рейтинг Кинопоиска</h3>
+                        <p>Честные оценки и отзывы зрителей.</p>
+                    </div>
+                    <div class="about__card">
+                        <div class="about__icon">🎥</div>
+                        <h3>Трейлеры и постеры</h3>
+                        <p>Вся информация о фильме в одном месте.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Подписка -->
+        <section class="subscribe section" id="subscribe">
+            <div class="container">
+                <h2 class="title">Будьте в курсе новинок</h2>
+                <p class="subscribe__description">Подпишитесь на рассылку и получайте подборки лучших фильмов каждую неделю.</p>
+                <form class="subscribe__form" id="subscribeForm">
+                    <input type="email" id="email" class="subscribe__input" placeholder="Ваш email" required>
+                    <button type="submit" class="subscribe__button">Подписаться</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__col">
+                <a class="footer__logo" href="index.html"><img src="assets/icons/logo.svg" alt="Киномир"></a>
+                <p>© 2026 Киномир<br>Все права защищены.</p>
+            </div>
+            <div class="footer__col">
+                <h4>Навигация</h4>
+                <ul>
+                    <li><a href="top250.html">Топ 250</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#subscribe">Подписка</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>Контакты</h4>
+                <a href="mailto:info@kinomir.ru">info@kinomir.ru</a>
+                <a href="tel:+79991234567">+7 (999) 123-45-67</a>
+                <div class="footer__socials">
+                    <a href="#"><img src="assets/images/tg.jpg" alt="Telegram"></a>
+                    <a href="#"><img src="assets/icons/VK.com-logo.svg" alt="VK"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+        <script src="js/config.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+</html>
+</body>
+</html> 
