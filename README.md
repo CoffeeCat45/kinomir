@@ -26,9 +26,9 @@
 Скриншоты
 
 > Например:
-> *   ![Главная страница](./screenshots/main-page.png)
-> *   ![Страница фильма](./screenshots/movie-page.png)
-> *   ![Тёмная тема](./screenshots/dark-theme.png)
+> *   ![Главная страница](screenshots/main-page.png)
+> *   ![Страница фильма](screenshots/movie-page.png)
+> *   ![Тёмная тема](screenshots/dark-theme.png)
 
 
 Посетите работающий веб-сайт по адресу: [https://coffeecat45.github.io/kinomir/](https://coffeecat45.github.io/kinomir/)
